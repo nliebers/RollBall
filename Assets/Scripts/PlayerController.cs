@@ -53,6 +53,15 @@ public class PlayerController : MonoBehaviour
 			other.gameObject.SetActive(false);
 			count += 1;
 			SetCountText();
-		}
+		} else if (other.gameObject.CompareTag("BluePill"))
+        
+		{
+			
+			count = 0;
+			SetCountText();
+        }
+
 	}
+
+	
 }
