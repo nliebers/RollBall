@@ -50,7 +50,15 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/NewAction",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
+      "type": "vibration"
+    },
+    {
+      "name": "/actions/default/out/NewAction",
       "type": "vibration"
     },
     {
