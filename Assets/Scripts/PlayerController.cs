@@ -9,7 +9,23 @@ public class PlayerController : MonoBehaviour
 	public float speed = 0;
 	public TextMeshProUGUI countText;
 	public GameObject winTextObject;
-	
+	public GameObject redPillObject;
+	public GameObject redPillObject02;
+	public GameObject redPillObject03;
+	public GameObject redPillObject04;
+	public GameObject redPillObject05;
+	public GameObject redPillObject06;
+	public GameObject redPillObject07;
+	public GameObject redPillObject08;
+	public GameObject redPillObject09;
+	public GameObject redPillObject10;
+	public GameObject redPillObject11;
+	public GameObject redPillObject12;
+	public GameObject redPillObject13;
+
+
+
+
 	private Rigidbody rb;
 	private int count;
 	private float movementX;
@@ -21,9 +37,25 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 		count = 0;
 		
+		
 		SetCountText();
 		winTextObject.SetActive(false);
-    }
+		redPillObject.SetActive(true);
+		redPillObject02.SetActive(true);
+		redPillObject03.SetActive(true);
+		redPillObject04.SetActive(true);
+		redPillObject05.SetActive(true);
+		redPillObject06.SetActive(true);
+		redPillObject07.SetActive(true);
+		redPillObject08.SetActive(true);
+		redPillObject09.SetActive(true);
+		redPillObject10.SetActive(true);
+		redPillObject11.SetActive(true);
+		redPillObject12.SetActive(true);
+		redPillObject13.SetActive(true);
+
+
+	}
 	
 	void OnMove(InputValue movementValue)
 	{
@@ -53,15 +85,34 @@ public class PlayerController : MonoBehaviour
 			other.gameObject.SetActive(false);
 			count += 1;
 			SetCountText();
-		} else if (other.gameObject.CompareTag("BluePill"))
+			
+		} if (other.gameObject.CompareTag("BluePill"))
         
 		{
-			
+			redPillObject.SetActive(true);
+			redPillObject02.SetActive(true);
+			redPillObject03.SetActive(true);
+			redPillObject04.SetActive(true);
+			redPillObject05.SetActive(true);
+			redPillObject06.SetActive(true);
+			redPillObject07.SetActive(true);
+			redPillObject08.SetActive(true);
+			redPillObject09.SetActive(true);
+			redPillObject10.SetActive(true);
+			redPillObject11.SetActive(true);
+			redPillObject12.SetActive(true);
+			redPillObject13.SetActive(true);
 			count = 0;
 			SetCountText();
+
+			
         }
 
+		
+
 	}
+
+	
 
 	
 }
