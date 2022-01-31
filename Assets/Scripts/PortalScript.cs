@@ -7,8 +7,6 @@ public class PortalScript : MonoBehaviour
 {
     public GameObject[] pickups;
     private int count;
-    private List<float> positionX = new List<float>();
-    private List<float> positionY = new List<float>();
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     public GameObject redPillObject;
@@ -29,11 +27,6 @@ public class PortalScript : MonoBehaviour
     {
         SetCountText();
         winTextObject.SetActive(false);
-
-        for (int i = 0; i < pickups.Length; i ++){
-            positionX[i] = pickups[i].transform.position.x;
-            positionY[i] = pickups[i].transform.position.y;
-        }
     }
     void SetCountText()
     {
@@ -51,14 +44,6 @@ public class PortalScript : MonoBehaviour
             other.gameObject.SetActive(false);
             count += 1;
             SetCountText();
-        } else if (other.gameObject.CompareTag("BluePill"))
-        {
-            for (int i = 0; i < pickups.Length; i++)
-            {
-                pickups[i].SetActive(true);
-                pickups[i].transform.position.x = positionX[i];
-                pickups[i].transform.position.y = positionY[i];
-            }
         }
     }
 

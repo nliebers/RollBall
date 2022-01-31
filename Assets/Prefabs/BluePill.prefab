@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6891730299358053200}
   - component: {fileID: 2755948859909615128}
   - component: {fileID: 5914522393085907666}
+  - component: {fileID: 1108486508908310711}
   m_Layer: 0
   m_Name: BluePill
   m_TagString: BluePill
@@ -123,3 +124,15 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1108486508908310711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7565341888431788683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ee27b9b35b2f145990a255a7b65b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

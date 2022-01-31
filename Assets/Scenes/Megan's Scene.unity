@@ -1516,6 +1516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 107946, guid: a0d21cd28590bbc47acda6deb8afc734, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: a0d21cd28590bbc47acda6deb8afc734, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3033,8 +3037,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f37f5c8835f654ab75d85f6f341e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countText: {fileID: 0}
-  winTextObject: {fileID: 0}
+  pickups: []
+  countText: {fileID: 661567053}
+  winTextObject: {fileID: 1012932904}
   redPillObject: {fileID: 0}
   redPillObject02: {fileID: 0}
   redPillObject03: {fileID: 0}
