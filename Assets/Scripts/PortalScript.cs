@@ -11,17 +11,19 @@ public class PortalScript : MonoBehaviour
     public GameObject winTextObject;
     public GameObject startText;
     public GameObject finalGround;
+    public GameObject resetText;
 
     void Start()
     {
         SetCountText();
         winTextObject.SetActive(false);
+        resetText.SetActive(false);
         Invoke("DisableStartPanel", 5f);
     }
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 13)
+        if (count >= 8)
         {
             winTextObject.SetActive(true);
             finalGround.SetActive(true);
