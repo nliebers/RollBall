@@ -16,6 +16,7 @@ public class BluePillScript : MonoBehaviour
     public GameObject player;
     public GameObject resetText;
     private float y = 0.5f;
+
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
@@ -32,6 +33,7 @@ public class BluePillScript : MonoBehaviour
             player.transform.position = new Vector3(0f, y, 0f);
             resetText.SetActive(true);
             Invoke("DisableResetPanel", 3f);
+            PortalScript.reset = true;
         }
     }
     void DisableResetPanel()

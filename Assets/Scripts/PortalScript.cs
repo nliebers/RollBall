@@ -6,12 +6,13 @@ using TMPro;
 
 public class PortalScript : MonoBehaviour
 {
-    private int count;
+    public int count;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     public GameObject startText;
     public GameObject finalGround;
     public GameObject resetText;
+    public static bool reset = false;
 
     void Start()
     {
@@ -43,6 +44,17 @@ public class PortalScript : MonoBehaviour
             count += 1;
             SetCountText();
         }
+    }
+
+    void Update()
+    {
+        if(reset == true)
+        {
+            count = 0;
+            SetCountText();  
+            reset = false;
+        }
+        
     }
 
 }

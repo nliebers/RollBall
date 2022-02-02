@@ -140,6 +140,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 983953196}
     - target: {fileID: 1108486508908310711, guid: 3e9296980d67fd84e9aa948e747e18e2, type: 3}
+      propertyPath: portal
+      value: 
+      objectReference: {fileID: 2010250475}
+    - target: {fileID: 1108486508908310711, guid: 3e9296980d67fd84e9aa948e747e18e2, type: 3}
       propertyPath: pickup1
       value: 
       objectReference: {fileID: 242819353}
@@ -768,6 +772,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 983953196}
+    - target: {fileID: 1108486508908310711, guid: 3e9296980d67fd84e9aa948e747e18e2, type: 3}
+      propertyPath: portal
+      value: 
+      objectReference: {fileID: 2010250475}
     - target: {fileID: 1108486508908310711, guid: 3e9296980d67fd84e9aa948e747e18e2, type: 3}
       propertyPath: pickup1
       value: 
@@ -3128,6 +3136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f37f5c8835f654ab75d85f6f341e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
   countText: {fileID: 661567053}
   winTextObject: {fileID: 1012932904}
   startText: {fileID: 1701865905}
@@ -3287,6 +3296,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 983953196}
+    - target: {fileID: 1108486508908310711, guid: 3e9296980d67fd84e9aa948e747e18e2, type: 3}
+      propertyPath: portal
+      value: 
+      objectReference: {fileID: 2010250475}
     - target: {fileID: 1108486508908310711, guid: 3e9296980d67fd84e9aa948e747e18e2, type: 3}
       propertyPath: pickup1
       value: 
